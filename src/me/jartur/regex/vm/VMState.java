@@ -40,14 +40,7 @@ public class VMState {
 
     public void split(int thread, int x, int y) {
         jump(thread, x);
-        boolean foundThread = false;
-        for (Integer integer : pcMap.values()) {
-            if(integer.equals(y)) {
-                foundThread = true;
-                break;
-            }
-        }
-
+        boolean foundThread = pcMap.values().contains(y);
         if(!foundThread) {
             jump(++lastThreadId, y);
             enqueuedThreads.add(lastThreadId);

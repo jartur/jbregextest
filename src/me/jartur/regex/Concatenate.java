@@ -11,7 +11,7 @@ import java.util.List;
 * Date: 7/18/13
 * Time: 11:42 PM
 */
-class Concatenate extends AST {
+class Concatenate implements AST {
     private final AST left;
     private final AST right;
 

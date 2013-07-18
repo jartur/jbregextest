@@ -14,7 +14,7 @@ import java.util.List;
 * Date: 7/18/13
 * Time: 11:42 PM
 */
-class Alternate extends AST {
+class Alternate implements AST {
     private final AST left;
     private final AST right;
 

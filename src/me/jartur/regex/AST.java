@@ -10,6 +10,6 @@ import java.util.List;
 * Date: 7/18/13
 * Time: 11:43 PM
 */
-abstract class AST {
-    public abstract List<Instruction> generateCode(int pc);
+interface AST {
+    List<Instruction> generateCode(int pc);
 }

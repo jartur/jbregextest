@@ -11,7 +11,7 @@ import java.util.List;
 * Date: 7/18/13
 * Time: 11:42 PM
 */
-class EmptyNode extends AST {
+class EmptyNode implements AST {
     @Override
     public List<Instruction> generateCode(int pc) {
         return Collections.emptyList();

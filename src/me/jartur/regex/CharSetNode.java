@@ -13,7 +13,7 @@ import java.util.List;
 * Date: 7/18/13
 * Time: 11:42 PM
 */
-class CharSetNode extends AST {
+class CharSetNode implements AST {
     private final CharGroup set;
 
     CharSetNode(CharGroup set) {
